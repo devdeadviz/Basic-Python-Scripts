@@ -1,3 +1,11 @@
+---
+name: Problem Statement
+about: Use this template for posting new problem statements.
+title: "[DATE]: [FEATURE NAME]"
+labels: Hacktoberfest, code, easy, medium, hard
+assignees: BALaka-18, rexdivakar
+---
+
 ### Describe Problem Statement Here
 
 -- Describe problem statement here with proper examples and test cases --
