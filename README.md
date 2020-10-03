@@ -15,12 +15,13 @@
 This repository will include scripts to easy, medium and hard competitive coding problems and normal coding questions.
 This is an open-to-all repository, where we encourage, students, teachers, developers, professionals, beginners, intermediates and experts : everyone, to come and code.
 
-Languages : Python.
+##### Languages : Python.
 
 
 ### HOW TO CONTRIBUTE
 
 1. Star the repository
+2. Claim an Issue by commenting on it to get assigned. **DO NOT RAISE A PR BEFORE YOU HAVE BEEN ASSIGNED. YOUR PR WILL STAND INVALID.**
 2. Fork it
 3. Clone the forked repository in your local system
 4. Add the upstream (the original repository from which you forked is the upstream)
