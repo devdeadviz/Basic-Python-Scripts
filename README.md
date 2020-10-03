@@ -22,11 +22,12 @@ This is an open-to-all repository, where we encourage, students, teachers, devel
 
 1. Star the repository
 2. Claim an Issue by commenting on it to get assigned. **DO NOT RAISE A PR BEFORE YOU HAVE BEEN ASSIGNED. YOUR PR WILL STAND INVALID.**
-2. Fork it
-3. Clone the forked repository in your local system
-4. Add the upstream (the original repository from which you forked is the upstream)
-5. Checkout to a new branch for every PR you make. The PR should be the name of the problem, say: ```3sum-closest```
-6. Start contributing !
+3. Fork it
+4. Clone the forked repository in your local system
+5. Add the upstream (the original repository from which you forked is the upstream)
+6. Checkout to a new branch for every PR you make. The PR should be the name of the problem, say: ```3sum-closest```
+7. All contributions must be under ```Coding_Problems``` directory.
+8. Start contributing !
 
 **REMEMBER :** 
 
