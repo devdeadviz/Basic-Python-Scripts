@@ -1,36 +1,34 @@
-class Solution:
-    def addTwoNumbers(self, l1: self.addTwoNumbers, l2: self.addTwoNumbers) -> self.addTwoNumbers:
-        num, cry = 0, 0
-        new_list = self.addTwoNumbers(0, None)  # creating new list for holding answer
-        temp = new_list
+# Definition for singly-linked list.
+class ListNode(object):
+    def __init__(self, x):
+        self.val = x
+        self.next = None
 
-        while l1 is not None and l2 is not None:
-            num = l1.val + l2.val + cry
-            cry = num // 10
-            num %= 10
-            temp.next = self.addTwoNumbers(num, None)
-            temp = temp.next
-            l1, l2 = l1.next, l2.next
-        new_list = new_list.next
+        
+def printList(nodeStart):
+    print(nodeStart.val)
+    if nodeStart.next == None:
+        return
+    else:
+        printList(nodeStart.next)
 
-        while l1 is not None:
-            num = l1.val + cry
-            cry = num // 10
-            num %= 10
-            temp.next = self.addTwoNumbers(num, None)
-            temp = temp.next
-            l1 = l1.next
-
-        while l2 is not None:
-            num = l2.val + cry
-            cry = num // 10
-            num %= 10
-            temp.next = self.addTwoNumbers(num, None)
-            temp = temp.next
-            l2 = l2.next
-
-        while cry != 0:
-            temp.next = self.addTwoNumbers(cry % 10, None)
-            cry //= 10
-
-        return new_list
+class Solution(object):
+    def addTwoNumbers(self, l1, l2):
+            
+        if l1 == None:
+            return l2
+            
+        if l2 == None:
+            return l1
+            
+        sval = l1.val + l2.val
+        if sval < 10:
+            ansNode = ListNode(sval)
+            ansNode.next = self.addTwoNumbers(l1.next, l2.next)
+            return ansNode
+        else:
+            rval = l1.val + l2.val-10
+            ansNode = ListNode(rval)
+            ansNode.next = self.addTwoNumbers(ListNode(1), self.addTwoNumbers(l1.next, l2.next))
+            return ansNode
+        
