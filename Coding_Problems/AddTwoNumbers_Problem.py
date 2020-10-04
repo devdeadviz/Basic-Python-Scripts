@@ -8,7 +8,7 @@ class ListNode(object):
 def printList(nodeStart):
     print(nodeStart.val)
     if nodeStart.next is None:
-        return
+        return False
     else:
         printList(nodeStart.next)
 
