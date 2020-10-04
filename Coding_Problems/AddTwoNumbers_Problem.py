@@ -10,7 +10,7 @@ def printList(nodeStart):
     if nodeStart.next is None:
         return False
     else:
-        printList(nodeStart.next)
+        return printList(nodeStart.next)
 
 
 class Solution(object):
